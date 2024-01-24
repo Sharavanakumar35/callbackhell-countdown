@@ -1,0 +1,48 @@
+.countdown-class {
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    /* transition: background-color 2s; */
+    /* background: url(/assets/tricolor-video.mp4); */
+}
+
+video#tricolor-bg {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}
+
+
+video#independence-bg {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    /* display: none !important; */
+}
+  
+  #countdown {
+    font-size: 10rem;
+    margin-bottom: 10px;
+    color: navy;
+    font-family: 'PatrioticFont', cursive;
+  }
+  
+  #independence {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15%;
+    margin-bottom: 15%;
+  }
+
+  
