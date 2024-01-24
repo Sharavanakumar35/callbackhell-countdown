@@ -22,27 +22,22 @@ function beginCountdown(count, callback) {
                         setTimeout(function () {
                             document.getElementById('countdown').innerText = count - 10;
                             setTimeout(function () {
-                                document.getElementById('countdown').innerText = '';
                                 document.getElementById('countdown-container').classList.remove('countdown-class');
-                                // Pause the tricolor-bg video
-                                document.getElementById('tricolor-bg').pause();
-
-                                // Hide the tricolor-bg video
-                                document.getElementById('tricolor-bg').style.display = 'none';
-
-                                // Show the independence-video
-                                var independenceVideo = document.getElementById('independence-video');
-                                independenceVideo.style.display = 'block';
-
-                                // Delay before unmuting to allow audio to play
-                                setTimeout(function () {
-                                    independenceVideo.muted = false;
-                                    independenceVideo.play();
-                                }, 100);
+                                document.getElementById('countdown').style.display = 'none';
+                                
+                                // document.getElementById('tricolor-bg').pause();
+                                // document.getElementById('tricolor-bg').style.display = 'none';
+                                // independenceVideo = document.getElementById('independence-video');
+                                // independenceVideo.style.display = 'block';
+                                
+                                // setTimeout(function () {
+                                //     independenceVideo.muted = false;
+                                //     independenceVideo.play();
+                                // }, 500);
                                     
                                 callback();
                             }, 500)
-                        }, 1000);
+                        }, 1000)
                       }, 1000);
                     }, 1000);
                   }, 1000);
