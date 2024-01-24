@@ -6,8 +6,7 @@
     justify-content: center;
     height: 100vh;
     margin: 0;
-    /* transition: background-color 2s; */
-    /* background: url(/assets/tricolor-video.mp4); */
+    transition: background-color 2s;
 }
 
 video#tricolor-bg {
@@ -27,7 +26,6 @@ video#independence-bg {
     min-width: 100%;
     min-height: 100%;
     z-index: -1;
-    /* display: none !important; */
 }
   
   #countdown {
@@ -35,14 +33,6 @@ video#independence-bg {
     margin-bottom: 10px;
     color: navy;
     font-family: 'PatrioticFont', cursive;
-  }
-  
-  #independence {
-    display: none;
-    justify-content: center;
-    align-items: center;
-    margin-top: 15%;
-    margin-bottom: 15%;
   }
 
   
