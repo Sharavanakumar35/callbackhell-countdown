@@ -26,6 +26,8 @@ function startCountdown(count, callback) {
                           document.getElementById('countdown-container').classList.remove('countdown-class');
                           document.getElementById('tricolor-bg').pause();
                           document.getElementById('tricolor-bg').style.display = 'none';
+                          document.getElementById('independence-video').style.display = 'block';
+                          document.getElementById('independence-video').play();
                           callback();
                         }, 2000);
                       }, 1000);
@@ -41,7 +43,5 @@ function startCountdown(count, callback) {
   }
   
   startCountdown(10, function () {
-    document.getElementById('independence-video').style.display = 'block';
-    document.getElementById('independence-video').play();
   });
   
